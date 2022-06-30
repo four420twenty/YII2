@@ -1,0 +1,13 @@
+В файл fronend/config/main.php ,
+в секцию return добавляем в modules 'debug' и загружаем модуль с помощью секции 'bootstrap':
+
+'bootstrap' => ['debug'],
+'modules' => [
+    'debug' => [
+        'class' => 'yii\debug\Module',
+    ],
+]
+
+В файле web/index.php определяем константу 'YII_DEBUG' в true.
+
+defined('YII_DEBUG') or define('YII_DEBUG', true);
