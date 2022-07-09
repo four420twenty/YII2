@@ -1,0 +1,12 @@
+Модель должна называтся как и таблица в базе данных.
+В папке frontend/models/ создаем класс Articles.php
+<?php
+
+namespace frontend\models;
+
+use yii\db\ActiveRecord;
+
+class Articles extends ActiveRecord
+{
+
+}
